@@ -3,20 +3,25 @@ package testingbaba;
 import java.util.Scanner;
 
 public class FindWeekDaysIndex {
+	
 	public void printWeekDaysIndex(String day)
 	{
-		String[] weekDays = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
-		
-		for(int i=0; i<weekDays.length; i++)
-		{
-			if(weekDays[i].equalsIgnoreCase(day))
-			{
-				System.out.println("The index of " + day + " is: " + i);
-				return;
-			}
+		if (day.equalsIgnoreCase("Monday")) {
+			System.out.println("Index of Monday is: 1");
+		} else if (day.equalsIgnoreCase("Tuesday")) {
+			System.out.println("Index of Tuesday is: 2");
+		} else if (day.equalsIgnoreCase("Wednesday")) {
+			System.out.println("Index of Wednesday is: 3");
+		} else if (day.equalsIgnoreCase("Thursday")) {
+			System.out.println("Index of Thursday is: 4");
+		} else if (day.equalsIgnoreCase("Friday")) {
+			System.out.println("Index of Friday is: 5");
+		} else if (day.equalsIgnoreCase("Saturday")) {
+			System.out.println("Index of Saturday is: 6");
+		} else  {
+			System.out.println("Index of Sunday is: Holiday");
 		}
 		
-		System.out.println("Invalid day entered: " + day);
 	}
 
 	public static void main(String[] args) {
