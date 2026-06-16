@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class ReverseString {
 	
+	//Reverse String  (Hello Java  -->  avaJ olleH)
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter String: ");
@@ -16,6 +18,11 @@ public class ReverseString {
 		}
 		
 		System.out.println("Reverse String is: " + revStr);
-}
+		
+	
+	    }
+
+	   
+	      
 }
 	
